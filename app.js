@@ -112,9 +112,18 @@
       btn.setAttribute("aria-expanded", String(open));
       document.body.classList.toggle("overflow-hidden", open);
     };
-    btn.addEventListener("click", () => toggle(menu.classList.contains("hidden")));
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      toggle(menu.classList.contains("hidden"));
+    });
     menu.addEventListener("click", (e) => {
       if (e.target.closest("a")) toggle(false);
+    });
+    document.addEventListener("click", (e) => {
+      if (!menu.classList.contains("hidden") && !e.target.closest("#nav")) toggle(false);
+    });
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") toggle(false);
     });
   }
 
