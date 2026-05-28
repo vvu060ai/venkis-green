@@ -70,14 +70,15 @@
   <div class="wrap flex items-center justify-between gap-3 py-3.5 md:py-4">
 
     <!-- Brand -->
-    <a href="#home" class="brand-mark flex items-center gap-2.5 text-cream-50 shrink-0">
-      <svg width="32" height="32" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-        <rect x="1" y="1" width="38" height="38" rx="10" stroke="currentColor" stroke-opacity=".25"/>
-        <path d="M20 9 C 14 16, 14 24, 20 31 C 26 24, 26 16, 20 9 Z" fill="#C89B2C"/>
-        <path d="M20 31 V 9" stroke="#0A2A1F" stroke-width="1.2"/>
+    <a href="#home" class="brand-mark flex items-center gap-2 text-cream-50 shrink-0">
+      <svg width="36" height="36" viewBox="0 0 44 44" fill="none" aria-hidden="true">
+        <!-- Left leaf (smaller, angled left) -->
+        <path d="M21 36 C 10 30, 8 17, 16 8 C 19 15, 21 26, 21 36 Z" fill="none" stroke="#C89B2C" stroke-width="2.2" stroke-linejoin="round"/>
+        <!-- Right leaf (larger, angled right) -->
+        <path d="M23 36 C 34 29, 37 15, 28 7 C 25 14, 23 26, 23 36 Z" fill="none" stroke="#C89B2C" stroke-width="2.2" stroke-linejoin="round"/>
       </svg>
       <span class="leading-tight">
-        <span class="block font-display font-bold text-[15px] tracking-tight">Venki's Green</span>
+        <span class="block font-display font-bold text-[15px] tracking-tight">Venki's <span class="text-gold-400">Green</span></span>
         <span class="hidden sm:block font-mono-soft text-[9.5px] uppercase tracking-[0.22em] opacity-60">Maize Silage Co.</span>
       </span>
     </a>
@@ -315,7 +316,7 @@
         <h3 class="font-display text-2xl text-forest-900 mt-4"><span data-i18n="products.basic_name">Basic</span></h3>
         <p class="text-sm text-stone-600 mt-1.5" data-i18n="products.basic_target">Daily affordable nutrition for local dairies</p>
 
-        <dl class="mt-5 grid grid-cols-2 gap-x-4 gap-y-3 text-sm">
+        <dl class="mt-5 grid grid-cols-2 gap-x-4 gap-y-3 text-sm hidden">
           <dt class="text-stone-400 font-mono-soft text-[10.5px] uppercase tracking-[0.16em]" data-i18n="products.price_label">Price</dt>
           <dt class="text-stone-400 font-mono-soft text-[10.5px] uppercase tracking-[0.16em]" data-i18n="products.pack_label">Pack</dt>
           <dd class="font-display text-lg text-forest-800" data-i18n="products.basic_price">₹4–5 / kg</dd>
@@ -346,7 +347,7 @@
         <h3 class="font-display text-2xl text-forest-900 mt-4"><span data-i18n="products.perf_name">Performance</span></h3>
         <p class="text-sm text-stone-600 mt-1.5" data-i18n="products.perf_target">Commercial dairy farms scaling output</p>
 
-        <dl class="mt-5 grid grid-cols-2 gap-x-4 gap-y-3 text-sm">
+        <dl class="mt-5 grid grid-cols-2 gap-x-4 gap-y-3 text-sm hidden">
           <dt class="text-stone-400 font-mono-soft text-[10.5px] uppercase tracking-[0.16em]" data-i18n="products.price_label">Price</dt>
           <dt class="text-stone-400 font-mono-soft text-[10.5px] uppercase tracking-[0.16em]" data-i18n="products.pack_label">Pack</dt>
           <dd class="font-display text-lg text-forest-800" data-i18n="products.perf_price">₹7–8 / kg</dd>
@@ -377,7 +378,7 @@
         <h3 class="font-display text-2xl text-gold-300 mt-4"><span data-i18n="products.prem_name">Premium</span></h3>
         <p class="text-sm text-cream-100/65 mt-1.5" data-i18n="products.prem_target">High-yield, performance-focused operations</p>
 
-        <dl class="mt-5 grid grid-cols-2 gap-x-4 gap-y-3 text-sm">
+        <dl class="mt-5 grid grid-cols-2 gap-x-4 gap-y-3 text-sm hidden">
           <dt class="text-cream-100/40 font-mono-soft text-[10.5px] uppercase tracking-[0.16em]" data-i18n="products.price_label">Price</dt>
           <dt class="text-cream-100/40 font-mono-soft text-[10.5px] uppercase tracking-[0.16em]" data-i18n="products.pack_label">Pack</dt>
           <dd class="font-display text-lg text-cream-50" data-i18n="products.prem_price">₹10–12 / kg</dd>
@@ -393,6 +394,90 @@
 
         <a href="#contact" class="btn btn-primary mt-6 self-start" data-i18n="products.cta">Inquire</a>
       </article>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────── WHY WE'RE DIFFERENT ───────────────────── -->
+<section id="difference" class="section bg-white">
+  <div class="wrap">
+    <header class="max-w-3xl" data-reveal>
+      <span class="eyebrow" data-i18n="diff.eyebrow">Why Choose Us</span>
+      <h2 class="h-section mt-5 text-forest-900" data-i18n="diff.title">What Makes Us Different</h2>
+      <p class="text-stone-600 text-base md:text-lg leading-relaxed mt-5 max-w-2xl" data-i18n="diff.subtitle">From seed to silage, we do things the right way — the way nature intended.</p>
+    </header>
+
+    <div class="mt-12 md:mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
+
+      <!-- Point 1: Organically Grown -->
+      <article class="card p-6" data-reveal>
+        <div class="w-10 h-10 rounded-full flex items-center justify-center text-forest-800" style="background:rgba(15,61,46,0.08)">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/>
+            <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+          </svg>
+        </div>
+        <h3 class="h-card text-forest-900 mt-5" data-i18n="diff.p1_title">100% Organically Grown</h3>
+        <p class="text-sm text-stone-600 mt-2 leading-relaxed" data-i18n="diff.p1_desc">Raised on natural soil — no synthetic inputs, no shortcuts.</p>
+      </article>
+
+      <!-- Point 2: Zero Chemicals or Fertilizers -->
+      <article class="card p-6" data-reveal data-delay="1">
+        <div class="w-10 h-10 rounded-full flex items-center justify-center text-forest-800" style="background:rgba(15,61,46,0.08)">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M4.93 4.93l14.14 14.14"/>
+          </svg>
+        </div>
+        <h3 class="h-card text-forest-900 mt-5" data-i18n="diff.p2_title">Zero Chemicals or Fertilizers</h3>
+        <p class="text-sm text-stone-600 mt-2 leading-relaxed" data-i18n="diff.p2_desc">Our fields rely on natural fertility alone. No chemical fertilizers, ever.</p>
+      </article>
+
+      <!-- Point 3: Non-GMO Crops -->
+      <article class="card p-6" data-reveal data-delay="2">
+        <div class="w-10 h-10 rounded-full flex items-center justify-center text-forest-800" style="background:rgba(15,61,46,0.08)">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22V11"/>
+            <path d="M12 11c2.5-2.5 6-3 8-1-1 2-2 4-4 5-1.5.8-2.9 1-4 1z"/>
+            <path d="M12 11C9.5 8.5 6 8 4 10c1 2 2 4 4 5 1.5.8 2.9 1 4 1z"/>
+            <path d="M12 7V2"/>
+          </svg>
+        </div>
+        <h3 class="h-card text-forest-900 mt-5" data-i18n="diff.p3_title">Non-GMO Crops Only</h3>
+        <p class="text-sm text-stone-600 mt-2 leading-relaxed" data-i18n="diff.p3_desc">Only natural, unmodified maize varieties selected for quality and nutrition.</p>
+      </article>
+
+      <!-- Points 4 & 5 — centered in a col-span-full row -->
+      <div class="col-span-full flex flex-col sm:flex-row justify-center gap-4 md:gap-5">
+
+        <!-- Point 4: No Preservatives -->
+        <article class="card p-6 flex-1 sm:max-w-sm" data-reveal>
+          <div class="w-10 h-10 rounded-full flex items-center justify-center text-forest-800" style="background:rgba(15,61,46,0.08)">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 3h6"/>
+              <path d="M10 3v4.5L7 10a7 7 0 1 0 10 0l-3-2.5V3"/>
+              <path d="M9.5 14.5l5-5"/>
+              <path d="M14.5 14.5l-5-5"/>
+            </svg>
+          </div>
+          <h3 class="h-card text-forest-900 mt-5" data-i18n="diff.p4_title">No Preservatives or Additives</h3>
+          <p class="text-sm text-stone-600 mt-2 leading-relaxed" data-i18n="diff.p4_desc">Pure anaerobic fermentation — nothing added, nothing masked.</p>
+        </article>
+
+        <!-- Point 5: Farm-to-Bag Traceability -->
+        <article class="card p-6 flex-1 sm:max-w-sm" data-reveal data-delay="1">
+          <div class="w-10 h-10 rounded-full flex items-center justify-center text-forest-800" style="background:rgba(15,61,46,0.08)">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 7l6-3 6 3 6-3v13l-6 3-6-3-6 3V7"/>
+              <path d="M9 4v13"/>
+              <path d="M15 7v13"/>
+            </svg>
+          </div>
+          <h3 class="h-card text-forest-900 mt-5" data-i18n="diff.p5_title">Farm-to-Bag Traceability</h3>
+          <p class="text-sm text-stone-600 mt-2 leading-relaxed" data-i18n="diff.p5_desc">Grown and processed on our own land. You know exactly what you're feeding.</p>
+        </article>
+
+      </div>
     </div>
   </div>
 </section>
@@ -737,75 +822,28 @@
       </p>
     </header>
 
-    <div class="mt-14 md:mt-20 grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-7">
-      <!-- Founder card 1 -->
+    <div class="mt-14 md:mt-20 grid sm:grid-cols-2 gap-5 md:gap-7 max-w-2xl mx-auto">
+      <!-- Founder -->
       <figure class="rounded-3xl overflow-hidden border border-stone-200/70 bg-white" data-reveal>
-        <div class="aspect-[4/5] relative overflow-hidden bg-gradient-to-br from-forest-700 via-forest-800 to-forest-950">
-          <!-- abstract premium portrait placeholder -->
-          <svg viewBox="0 0 400 500" class="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-            <defs>
-              <radialGradient id="p1" cx="50%" cy="38%" r="60%">
-                <stop offset="0%" stop-color="#1E6B4F"/>
-                <stop offset="100%" stop-color="#06201A"/>
-              </radialGradient>
-            </defs>
-            <rect width="400" height="500" fill="url(#p1)"/>
-            <circle cx="200" cy="200" r="78" fill="#0A2A1F"/>
-            <ellipse cx="200" cy="440" rx="170" ry="120" fill="#0A2A1F"/>
-            <circle cx="200" cy="200" r="78" fill="none" stroke="#C89B2C" stroke-opacity=".25" stroke-width="1"/>
-            <text x="200" y="208" text-anchor="middle" fill="#C89B2C" font-family="Fraunces, serif" font-size="56" font-style="italic">V</text>
-          </svg>
+        <div class="aspect-[4/5] relative overflow-hidden bg-forest-950">
+          <img src="uploads/founder.png" alt="Venkatesh Hosamani, Founder" class="absolute inset-0 w-full h-full object-cover object-top" loading="lazy"/>
           <div class="absolute top-4 left-4 font-mono-soft text-[10.5px] uppercase tracking-[0.18em] text-gold-300/80">01</div>
         </div>
         <figcaption class="p-5 md:p-6">
-          <div class="font-display text-xl text-forest-900" data-i18n="founders.f1_n">Venkatesh R.</div>
-          <div class="text-sm text-stone-500 mt-1" data-i18n="founders.f1_r">Co-founder · Operations</div>
+          <div class="font-display text-xl text-forest-900" data-i18n="founders.f1_n">Venkatesh Hosamani</div>
+          <div class="text-sm text-stone-500 mt-1" data-i18n="founders.f1_r">Founder</div>
         </figcaption>
       </figure>
 
+      <!-- Co-founder -->
       <figure class="rounded-3xl overflow-hidden border border-stone-200/70 bg-white" data-reveal data-delay="1">
-        <div class="aspect-[4/5] relative overflow-hidden bg-gradient-to-br from-forest-700 via-forest-800 to-forest-950">
-          <svg viewBox="0 0 400 500" class="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-            <defs>
-              <radialGradient id="p2" cx="50%" cy="38%" r="60%">
-                <stop offset="0%" stop-color="#2A8260"/>
-                <stop offset="100%" stop-color="#06201A"/>
-              </radialGradient>
-            </defs>
-            <rect width="400" height="500" fill="url(#p2)"/>
-            <circle cx="200" cy="200" r="78" fill="#0A2A1F"/>
-            <ellipse cx="200" cy="440" rx="170" ry="120" fill="#0A2A1F"/>
-            <circle cx="200" cy="200" r="78" fill="none" stroke="#C89B2C" stroke-opacity=".25"/>
-            <text x="200" y="208" text-anchor="middle" fill="#C89B2C" font-family="Fraunces, serif" font-size="56" font-style="italic">A</text>
-          </svg>
+        <div class="aspect-[4/5] relative overflow-hidden bg-forest-950">
+          <img src="uploads/co-founder.png" alt="Vishal Urankar, Co-founder" class="absolute inset-0 w-full h-full object-cover object-top" loading="lazy"/>
           <div class="absolute top-4 left-4 font-mono-soft text-[10.5px] uppercase tracking-[0.18em] text-gold-300/80">02</div>
         </div>
         <figcaption class="p-5 md:p-6">
-          <div class="font-display text-xl text-forest-900" data-i18n="founders.f2_n">Ananya Venkatesh</div>
-          <div class="text-sm text-stone-500 mt-1" data-i18n="founders.f2_r">Co-founder · Agronomy</div>
-        </figcaption>
-      </figure>
-
-      <figure class="rounded-3xl overflow-hidden border border-stone-200/70 bg-white sm:col-span-2 lg:col-span-1" data-reveal data-delay="2">
-        <div class="aspect-[4/5] relative overflow-hidden bg-gradient-to-br from-forest-700 via-forest-800 to-forest-950">
-          <svg viewBox="0 0 400 500" class="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-            <defs>
-              <radialGradient id="p3" cx="50%" cy="38%" r="60%">
-                <stop offset="0%" stop-color="#1E6B4F"/>
-                <stop offset="100%" stop-color="#06201A"/>
-              </radialGradient>
-            </defs>
-            <rect width="400" height="500" fill="url(#p3)"/>
-            <circle cx="200" cy="200" r="78" fill="#0A2A1F"/>
-            <ellipse cx="200" cy="440" rx="170" ry="120" fill="#0A2A1F"/>
-            <circle cx="200" cy="200" r="78" fill="none" stroke="#C89B2C" stroke-opacity=".25"/>
-            <text x="200" y="208" text-anchor="middle" fill="#C89B2C" font-family="Fraunces, serif" font-size="56" font-style="italic">K</text>
-          </svg>
-          <div class="absolute top-4 left-4 font-mono-soft text-[10.5px] uppercase tracking-[0.18em] text-gold-300/80">03</div>
-        </div>
-        <figcaption class="p-5 md:p-6">
-          <div class="font-display text-xl text-forest-900" data-i18n="founders.f3_n">Karthik V.</div>
-          <div class="text-sm text-stone-500 mt-1" data-i18n="founders.f3_r">Co-founder · Distribution</div>
+          <div class="font-display text-xl text-forest-900" data-i18n="founders.f2_n">Vishal Urankar</div>
+          <div class="text-sm text-stone-500 mt-1" data-i18n="founders.f2_r">Co-founder</div>
         </figcaption>
       </figure>
     </div>
@@ -927,13 +965,14 @@
     <div class="grid md:grid-cols-12 gap-10">
       <div class="md:col-span-5">
         <div class="flex items-center gap-2.5">
-          <svg width="38" height="38" viewBox="0 0 40 40" fill="none">
-            <rect x="1" y="1" width="38" height="38" rx="10" stroke="#C89B2C" stroke-opacity=".35"/>
-            <path d="M20 9 C 14 16, 14 24, 20 31 C 26 24, 26 16, 20 9 Z" fill="#C89B2C"/>
-            <path d="M20 31 V 9" stroke="#0A2A1F" stroke-width="1.2"/>
+          <svg width="42" height="42" viewBox="0 0 44 44" fill="none">
+            <!-- Left leaf (smaller, angled left) -->
+            <path d="M21 36 C 10 30, 8 17, 16 8 C 19 15, 21 26, 21 36 Z" fill="none" stroke="#C89B2C" stroke-width="2.2" stroke-linejoin="round"/>
+            <!-- Right leaf (larger, angled right) -->
+            <path d="M23 36 C 34 29, 37 15, 28 7 C 25 14, 23 26, 23 36 Z" fill="none" stroke="#C89B2C" stroke-width="2.2" stroke-linejoin="round"/>
           </svg>
           <div class="leading-tight">
-            <div class="font-display text-xl text-cream-50">Venki's Green</div>
+            <div class="font-display text-xl text-cream-50">Venki's <span class="text-gold-400">Green</span></div>
             <div class="font-mono-soft text-[10.5px] uppercase tracking-[0.22em] text-cream-100/55">Maize Silage Co.</div>
           </div>
         </div>
